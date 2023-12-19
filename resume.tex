@@ -1,0 +1,198 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% Document class and options
+\documentclass[margin,line]{./templates/resume}
+
+% Packages
+\usepackage[utf8]{inputenc} % UTF-8 encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage[english]{babel} % Language settings
+\usepackage{fontawesome} % Icons
+\usepackage{graphicx,wrapfig} % Graphics and wrapping
+\usepackage{tabularx} % Enhanced tables
+\usepackage{url} % URL formatting
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref} % Hyperlinks
+
+
+
+\pdfcompresslevel=9
+
+\begin{document}{\sc \hspace*{4mm}\vspace{0mm}\\
+\LARGE \textbf{Raymond Chang}}
+\vspace{1mm}\\
+\hspace*{112mm} \small raymond.w.jang@gmail.com | +1 (773) 558-2869
+\vspace*{1mm}
+\begin{resume}
+
+
+% === EDUCATION ===
+\section{\mysidestyle Education}
+\textbf{University of California, Los Angeles} \hfill \textsl{Sep 2016 - Present}\\
+    MS in Physics \hfill Los Angeles, CA\\
+    Ph.D Candidate in Physics \hfill\\
+  \hspace*{2mm} \textbullet \hspace*{0.5mm} Interrupted from April 2021 to August 2023 due to the mandatory Korean military service.
+%   \hspace*{4mm} Physics Division Fellowship\\
+%  	\hspace*{4mm} Research Advisor: Prof. Daniel Aharoni\\
+%   \hspace*{4mm} Thesis Topic: Hippocampal CA1 place cells in large environments
+\vspace{.2mm}\\
+\textbf{Northwestern University} \hfill \textsl{June 2016}\\
+	Bachelor of Science in Physics and Astronomy \hfill Evanston, IL
+%   \hspace*{4mm} Concentration: Advanced Physics
+%   \hspace*{4mm} Founders Scholarship\\
+
+
+% === WORK EXPERIENCE ===
+\section{\mysidestyle Work Experience}
+\textbf{Data Scientist}, Peoplefund Company Incorporated \hfill \textsl{Sep 2022 - Jul 2023}\\
+Data Strategy Team \hfill Seoul, South Korea
+
+\begin{list2}
+    \item {Optimized the loan approval strategy model, cutting runtime from 3 days to 10 minutes, elevating the product into a viable solution for enterprise-level lenders.}
+    \item {Designed and implemented a new loan performance prediction model, reducing MAPE from 41\% to 6\%.}
+    \item {Defined the comprehensive objective function and completed code architecture for a loan profit optimization model. Its backtesting results conservatively estimate a 5-18\% increase in revenue.}
+    \item {Led collaboration with engineering and business teams to incorporate modern data science tools, such as Superset, MLFlow, and others, streamlining operations and standardizing documentation.}
+    \item {Deployed proof-of-concept products, supplying full-stack codes to support engineering teams in further development.}
+\end{list2}
+
+\textbf{Data Scientist}, Voithru Corporation \hfill \textsl{Nov 2021 - Sep 2022}\\
+Data Team \hfill Seoul, South Korea
+
+\begin{list2}
+    \item {Launched and managed the company's first-ever fraud detection system based on freelancer behavior logs on the company platform, detecting 1000+ fraudulent translations (5-10\% of total) per month.}
+    \item {Developed a novel ranking system to oversee 1,700+ freelancers, integrating 12+ performance metrics derived from feedback by product and quality management teams.}
+    \item {Deployed the first deep learning subtitle categorization model with an approximately 90\% accuracy rate to provide insights for the quality management team and the fraud detection system.}
+    \item {Built and maintained Apache Superset dashboards to visualize freelancer performances and statistics.}
+    \item {Proposed a machine-translation-assisted translation experiment design to improve productivity by over 20\%, and kickstarted the platform development.}
+    \item {Implemented a bioinformatics algorithm to automate audio-subtitle matching. Improved the in-house system's time efficiency by three orders of magnitude while drastically improving the accuracy.}
+\end{list2}
+
+
+% === RESEARCH EXPERIENCE ===
+\section{\mysidestyle Research Experience}
+\textbf{Graduate Research Assistant}, University of California, Los Angeles\\
+% Advisor: Prof. Daniel Aharoni\\
+Miniscope Project, Neuroscience Discovery Group \hfill \textsl{Jan 2019 - Apr 2021}
+
+\begin{list2}
+    \item {Constructed a data analysis pipeline that streamlines the process of extracting the behavior modulated neuronal activities from raw data, which became the internal standard analysis package for the laboratory.}
+    \item {Developed a wireless brain imaging device that can be implanted on live, unrestrained animals. Oversaw the circuit design, microcontroller codes, and data and power streaming protocols, leading to the introduction or improvement of 7+ features while maintaining the same power consumption.}
+    \item {The wireless design received a 1.4 million dollar grant from the National Institute of Health for its large-scale piloting experiment and is currently deployed in various UC labs.}
+\end{list2}
+
+% Advisor: Prof. Alex Levine\\
+% Genetic Codes and Stochastically Coevolving Populations, Center for Biological Physics \hfill \textsl{Sep 2018 - Jan 2019}
+
+% \begin{list2}
+%    \item {Examined algorithms for genetic code developments based on various coevolution models.}
+% \end{list2}
+
+% Advisor: Prof. Mayank Mehta\\
+Electrophysiology Signal Clustering Project, Center for Biological Physics \hfill \textsl{Dec 2016 - Jun 2017}
+
+\begin{list2}
+    \item {Developed an algorithm for tetrode signal clustering based on the application of Monte Carlo method on a 4-D quantum Ising model.}
+    \item {Improved the accuracy of detecting which brain cells the electric signals have originated from.}
+\end{list2}
+
+% \textbf{Undergraduate Research Assistant}, Northwestern University\\
+% % Advisor: Prof. Michael Schmitt\\
+% Type 1A Supernovae Categorization Project  \hfill \textsl{Jul 2014 - Apr 2015}
+
+% \begin{list2}
+%     \item {Developed and trained a neural network model in C++ for categorizing type 1A supernovae from their luminosity timelines.}
+% \end{list2}
+
+
+% === TECHNICAL SKILLS ===
+\section{\mysidestyle Technical\\Skills}
+\textbf{Programming Languages, Frameworks, and Softwares}
+\begin{list2}
+    \item{Languages: Linux, Python, SQL, C, Matlab}
+    \item{Frameworks: Apache Spark, Docker, Kubeflow, MLFlow, Jenkins, DBT}
+    \item{Softwares: EC2, Apache Superset, Fusion 360, KiCad}
+\end{list2}
+
+
+% === AWARDS ===
+% \section{\mysidestyle Honors and Awards}
+% \textbf{Physics Division Fellowship}\hfill \textsl{Sep 2016 - Apr 2021}\\
+% UCLA Graduate Division % \hfill \textsl{Los Angeles, CA}\\
+% \begin{list2}
+%     \item {Scholarship covering full tuition and stipend (over \$15,000 per year) for graduate study}
+% \end{list2}
+
+% \textbf{Founders Scholarship and Northwestern Scholarship}\hfill \textsl{Sep 2011 - Sep 2016}\\
+% Northwestern University % \hfill \textsl{Evanston, IL}\\
+% \begin{list2}
+%     \item {Scholarship for undergraduate students meeting a set of academic and leadership criteria}
+% \end{list2}
+
+
+% === LEADERSHIP EXPERIENCE ===
+\section{\mysidestyle Leadership Experience}
+\textbf{Teaching Assistant}, University of California, Los Angeles {\hfill \textsl{Jul 2017 - Jun 2019}}\\
+Physics and Astronomy Department
+\begin{list2}
+    % \item {Courses: Mechanics and Energy, Thermodynamics and Waves, Electromagnetism and Modern Physics}
+    \item {Worked as an instructor for discussion sections and laboratory sections for 100-200 students per quarter.}
+    \item {Conducted weekly teaching sessions and reviews; designed and graded quizzes, tests, and exams.}
+    \item {Achieved 8.77 to 9.56 evaluation scores on a scale of 0-10.}
+\end{list2}
+
+
+% === LEADERSHIP EXPERIENCE ===
+% \section{\mysidestyle Languages}
+% \textbf{English}, Native Proficiency\\
+% \textbf{Korean}, Native Proficiency
+
+
+% === PUBLICATIONS ===
+% \section{\mysidestyle Publications}
+% "A wire/wire-free large field of view miniature microscope for imaging neural dynamics in freely behaving 
+% animals", Poster presented at: \textit{BRAIN Initiative Investigators Meeting}; 
+% Jun. 2021; Washington D.C.
+% \vspace{4.2mm}\\
+% "Miniscope neuronex hub: Miniaturized open source devices for calcium imaging, electrophysiology, and 
+% real-time control of neural activity", Poster presented at: \textit{Society for Neuroscience (SfN)}; 
+% Oct, 2019; Chicago, IL.
+
+
+%Most Recent Evaluations:
+%\begin{list2}
+%    \item {Electromagnetism and Modern Physics \hfill \textsl{Apr 2019 - Jun 2019}\\
+%        \textbf{9.33}/10 (n = 49)}
+%    \item {Thermodynamics, Fluids, Wave, Light and Optics \hfill \textsl{Jan 2019 - Mar 2019}\\
+%        \textbf{8.77}/10 (n = 86)}
+%    \item {Thermodynamics and Waves \& Electromagnetism and Modern Physics \hfill \textsl{Sep 2018 - Dec 2018}\\
+%        \textbf{9.26}/10 (n = 49)}
+%\end{list2}
+%\textbf{Peer Facilitator}, Northwestern University \hfill \textsl{Sep 2012 - Jun 2013}\\
+%Tutored a 5-7 person-sized peer-guided study group alongside the courses.
+%\begin{list2}
+%    \item {Courses: General Physics Series}
+%\end{list2}
+
+
+% === EXTRACURRICULAR ACTIVITIES ===
+% \section{\mysidestyle Extra Curricular Activities}
+%\textbf{Volunteer}, Wags and Walks \hfill \textsl{Sep 2017 - Dec 2019}\\
+%Upkept the kennels, walked and fed dogs rescued from the shelters. 
+%\vspace{4.2mm}\\
+% \textbf{Social Chair}, Delta Sigma Pi Business Fraternity \hfill \textsl{Sep 2013 - Sep 2014}\\
+% Coordinated community building events for the fraternity members.
+% \vspace{4.2mm}\\
+%\textbf{Member}, Applause for a Cause \hfill \textsl{Oct 2012 - Jun 2013}\\
+%Worked as a part of a film production student group.
+%\vspace{4.2mm}\\
+% \textbf{Mentor}, Project TEACH \hfill \textsl{Jun 2013 - Jan 2014}\\
+% Volunteered as a part of a mentorship program for children in underprivileged area.
+% \vspace*{4.2mm}
+
+
+% === RESEARCH INTEREST ===
+% \section{\mysidestyle Interests}
+% Biophysics, Cognitive Neuroscience, Stochastic Process
+
+\end{resume}   
+\end{document}
